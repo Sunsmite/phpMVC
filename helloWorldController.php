@@ -1,0 +1,16 @@
+<?php
+
+class helloWorldController
+{
+    private $model;
+
+    public function __construct($model){
+        $this->model = $model;
+    }
+
+    public function mouseButtonPressed() {
+        $this->model->string = "Updated Hello World!";
+    }
+}
+
+?>
